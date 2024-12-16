@@ -12,15 +12,14 @@ COPY package*.json ./
 # Instalar dependencias
 RUN npm install
 
-# Copiar solo la carpeta y otros archivos necesarios
+# Copiar solo la carpeta `server`, `client` y otros archivos necesarios
+#COPY ./server ./server
+#COPY ./client ./client
 COPY ./app ./app
-#COPY ./prometheus ./prometheus
 
 # Exponer el puerto de la aplicación
 EXPOSE 3000
 
-# Cambiar el directorio de trabajo a `server` donde está `index.js`
-WORKDIR /app/app
 
 # Comando para iniciar la aplicación
-CMD ["node", "index.js"]
+CMD ["node", "app/index.js"]

@@ -1,0 +1,4 @@
+pytest
+numpy
+requests
+pytest-cov

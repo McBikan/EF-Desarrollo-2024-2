@@ -5,10 +5,8 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - .:../app
-    environment:
-      NODE_ENV: production
-      PORT: 3000
+      - .:./app
+      
     depends_on:
       - prometheus
       - grafana

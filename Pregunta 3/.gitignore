@@ -1,0 +1,33 @@
+# Node.js
+node_modules/  
+#Para que se repitan los modulos de node en github
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Entornos de desarrollo
+.env
+.env.local
+.env.*.local
+
+# Caché del navegador
+.cache/
+
+# Archivos de construcción
+dist/
+build/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+
+coverage/
